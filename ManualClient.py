@@ -37,11 +37,8 @@ class ManualContext(CommonContext):
     async def server_auth(self, password_requested: bool = False):
         if password_requested and not self.password:
             await super(ManualContext, self).server_auth(password_requested)
-        
-        if "Manual_" not in self.ui.game_bar_text.text:
-            raise Exception("The Manual client can only be used for Manual games.")
 
-        self.game = self.ui.game_bar_text.text
+        self.game = "Manual"
 
         self.location_names_to_id = dict([(value, key) for key, value in self.location_names.items()])
 
@@ -117,18 +114,10 @@ class ManualContext(CommonContext):
             def __init__(self, ctx):
                 super().__init__(ctx)
 
-            def build(self) -> Layout: 
+            def build(self) -> Layout:
                 super(ManualManager, self).build()
-
+                #
                 self.manual_game_layout = BoxLayout(orientation="horizontal", size_hint_y=None, height=30)
-
-                game_bar_label = Label(text="Manual Game ID", size=(150, 30), size_hint_y=None, size_hint_x=None)
-                self.manual_game_layout.add_widget(game_bar_label)
-                self.game_bar_text = TextInput(text="Manual_{\"game\" from game.json}_{\"player\" from game.json}", 
-                                                size_hint_y=None, height=30, multiline=False, write_tab=False)          
-                self.manual_game_layout.add_widget(self.game_bar_text)
-
-                self.grid.add_widget(self.manual_game_layout, 3)
 
                 panel = TabbedPanelItem(text="Tracker and Locations", size_hint_y = 1)
                 self.tracker_and_locations_panel = panel.content = TrackerAndLocationsLayout(cols = 2)

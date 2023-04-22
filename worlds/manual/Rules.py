@@ -1,12 +1,13 @@
 from ..generic.Rules import set_rule
-from ..AutoWorld import World
-from BaseClasses import MultiWorld
 
-def set_rules(base: World, world: MultiWorld, player: int):
+
+def set_rules(self):
+    multiworld = self.multiworld
+    player = self.player
     # Location access rules
-    for location in base.location_table:
-        locFromWorld = world.get_location(location["name"], player)
-        if "requires" in location: # Specific item access required
+    for location in multiworld.locations[player].value:
+        locFromWorld = multiworld.get_location(location["name"], player)
+        if "requires" in location:  # Specific item access required
             def fullLocationCheck(state, location=location):
                 canAccess = True
 
@@ -43,10 +44,5 @@ def set_rules(base: World, world: MultiWorld, player: int):
 
                 return canAccess
             set_rule(locFromWorld, fullLocationCheck)
-        else: # Only region access required
-            def allRegionsAccessible(state, location=location):
-                return True
-            set_rule(locFromWorld, allRegionsAccessible) # everything is in the same region in manual
 
-    # Victory requirement
-    world.completion_condition[player] = lambda state: state.has("__Victory__", player)
+    multiworld.completion_condition[player] = lambda state: state.has("Victory", player)
