@@ -69,6 +69,9 @@
             "Characters",
             "Right Side"
         ],
+        "dev_category": [
+            "Avengers"
+        ],
         "progression": true 
     },
     { 
@@ -132,6 +135,9 @@
         "category": [
             "Characters",
             "Right Side"
+        ],
+        "dev_category": [
+            "Avengers"
         ],
         "progression": true 
     },
@@ -197,6 +203,9 @@
             "Characters",
             "Right Side"
         ],
+        "dev_category": [
+            "Avengers"
+        ],
         "progression": true 
     },
     { 
@@ -261,6 +270,9 @@
             "Characters",
             "Right Side"
         ],
+        "dev_category": [
+            "Avengers"
+        ],
         "progression": true 
     },
     { 
@@ -309,6 +321,9 @@
             "Characters",
             "Right Side"
         ],
+        "dev_category": [
+            "Avengers"
+        ],
         "progression": true 
     },
     { 
@@ -324,6 +339,9 @@
         "category": [
             "Characters",
             "Right Side"
+        ],
+        "dev_category": [
+            "Avengers"
         ],
         "progression": true 
     },

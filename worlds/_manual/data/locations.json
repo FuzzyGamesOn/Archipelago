@@ -63,7 +63,8 @@
     { 
         "name": "Beat the Game - Doctor Strange", 
         "category": ["Unlocked Teams", "Right Side"],
-        "requires": "|Doctor Strange|"
+        "requires": "|Doctor Strange|",
+        "place_item_category": ["Avengers"]
     },
     { 
         "name": "Beat the Game - Chris", 
