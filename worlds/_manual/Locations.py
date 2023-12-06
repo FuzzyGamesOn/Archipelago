@@ -48,7 +48,7 @@ for item in location_table:
     location_id_to_name[item["id"]] = item["name"]
     location_name_to_location[item["name"]] = item
 
-    for c in item.get("category", []):
+    for c in item.get("all_category", []):
         if c not in location_name_groups:
             location_name_groups[c] = []
         location_name_groups[c].append(item["name"])

@@ -256,7 +256,7 @@ class DataValidation():
             
             if "item_categories" in starting_block:
                 for category_name in starting_block["item_categories"]:
-                    if len([item for item in DataValidation.item_table if "category" in item and category_name in item["category"]]) == 0:
+                    if len([item for item in DataValidation.item_table if "all_category" in item and category_name in item["all_category"]]) == 0:
                         raise ValidationError("Item category %s is set as a starting item category, but is misspelled or is not defined on any items." % (category_name))
 
     @staticmethod

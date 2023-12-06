@@ -85,7 +85,7 @@ def set_rules(base: World, world: MultiWorld, player: int):
             total = 0
 
             if require_type == 'category':
-                category_items = [item for item in base.item_name_to_item.values() if "category" in item and item_name in item["category"]]
+                category_items = [item for item in base.item_name_to_item.values() if "all_category" in item and item_name in item["all_category"]]
                 if item_count.lower() == 'all':
                     item_count = sum([base.item_name_to_item[category_item["name"]]['count'] for category_item in category_items])
                 elif item_count.lower() == 'half':

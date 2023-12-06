@@ -4,6 +4,7 @@ import pkgutil
 import sys
 
 from .DataValidation import DataValidation, ValidationError
+from .Helpers import category_join
 
 from .hooks.Data import \
     after_load_item_file, after_load_progressive_item_file, \
@@ -26,6 +27,11 @@ item_table = load_data_file('items.json')
 progressive_item_table = {}
 location_table = load_data_file('locations.json')
 region_table = load_data_file('regions.json')
+
+# create all_categories
+item_table = category_join(item_table)
+progressive_item_table = category_join(progressive_item_table)
+location_table = category_join(location_table)
 
 # hooks
 item_table = after_load_item_file(item_table)

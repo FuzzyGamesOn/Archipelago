@@ -139,7 +139,7 @@ class ManualWorld(World):
 
                 # if the setting lists specific item categories, limit the items to ones that have any of those categories
                 if "item_categories" in starting_item_block:
-                    items_in_categories = [item["name"] for item in self.item_name_to_item.values() if "category" in item and len(set(starting_item_block["item_categories"]).intersection(item["category"])) > 0]
+                    items_in_categories = [item["name"] for item in self.item_name_to_item.values() if "all_category" in item and len(set(starting_item_block["item_categories"]).intersection(item["all_category"])) > 0]
                     items = [item for item in pool if item.name in items_in_categories]
 
                 random.shuffle(items)
@@ -185,7 +185,7 @@ class ManualWorld(World):
                 if len(location["place_item_category"]) == 0:
                     continue
 
-                eligible_item_names = [i["name"] for i in item_name_to_item.values() if "category" in i and set(i["category"]).intersection(location["place_item_category"])]
+                eligible_item_names = [i["name"] for i in item_name_to_item.values() if "all_category" in i and set(i["all_category"]).intersection(location["place_item_category"])]
                 eligible_items = [item for item in self.multiworld.itempool if item.name in eligible_item_names and item.player == self.player]
 
                 if len(eligible_items) == 0:

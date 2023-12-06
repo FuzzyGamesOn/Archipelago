@@ -40,7 +40,7 @@ for item in item_table:
     if item["id"] is not None:
         lastItemId = max(lastItemId, item["id"])
 
-    for c in item.get("category", []):
+    for c in item.get("all_category", []):
         if c not in item_name_groups:
             item_name_groups[c] = []
         item_name_groups[c].append(item_name)
