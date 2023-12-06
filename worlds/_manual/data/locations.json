@@ -99,7 +99,7 @@
     { 
         "name": "Beat the Game - Captain America", 
         "category": ["Unlocked Teams", "Right Side"],
-        "requires": "|Captain America|"
+        "requires": "|Captain America| AND |@Avengers:3|"
     },
     { 
         "name": "Beat the Game - Dormammu", 
