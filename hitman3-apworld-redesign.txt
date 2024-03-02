@@ -1,0 +1,228 @@
+Making items useful:
+ - Sniper / SMG / Shotgun / Melee - Have targets that can only be killed by these
+ - Kalmer / Sieker - Have targets that can't be killed (like Diana was)
+ - Taser / Explosive - Have targets that require accident kill
+ - Emetic / Lethal / Sedative - Have targets that require being poisoned
+ - Lockpick / Key Hackers - Can these even gate kills? Maybe just start with.
+ - Explosive - Have targets that require explosion kill (baseball / golf ball / ducks good for this)
+
+Every varied map should have:
+1 Sniper target
+1 Explosion Kill target
+1 Drowning (Emetic) target
+1 Melee target
+1 no restriction kill target
+
+Every open map should have:
+4 no restriction kill targets
+1 Sniper target
+
+Every themed map should have:
+4 (themed) kills
+1 no restriction kill
+
+Theme counts:
+- Varied: 4
+- Open: 3
+- Sniper: 3
+- Melee: 3
+- Lethal: 2
+- Emetic: 2
+- Explosion: 2
+- Shotgun: 2
+
+Map themes:
+- ICA Facility - Theme: Melee (Themed)
+- Paris - Theme: Varied
+- Sapienza - Theme: Varied
+- Marrakesh - Theme: Shotgun (Themed)
+- Bangkok - Theme: Explosion (Themed)
+- Colorado - Theme: Sniper (Themed)
+- Hokkaido - Theme: Melee (Themed)
+- Hawke's Bay - Theme: Lethal (Themed)
+- Miami - Theme: Emetic (Themed)
+- Santa Fortuna - Theme: Open
+- Mumbai - Theme: Sniper (Themed)
+- Whittleton Creek - Theme: Shotgun (Themed)
+- Isle of Sgail - Theme: Open
+- New York - Theme: Explosion (Themed)
+- Haven Island - Theme: Melee (Themed)
+- Dubai - Theme: Varied
+- Dartmoor - Theme: Varied
+- Berlin - Theme: Sniper (Themed)
+- Chongqing (China) - Theme: Emetic (Themed)
+- Mendoza - Theme: Lethal (Themed)
+- Ambrose Island - Theme: Open
+
+Map targets and restrictions:
+- ICA Facility
+- Paris
+  - Rule: Stay outside until Access
+  - Theme: Varied
+  - Targets:
+    - Olivier - Explosive - Basement Kitchen
+    - Roland - Drowning - Near Runway
+    - Felicienne - Any - Bar Interior
+    - Viviane - Any - 2F Tech Station
+    - Mabaya - Sniper - 3F Balcony
+- Sapienza
+  - Rule: Mansion and Church are inaccessible without Access
+  - Theme: Varied
+  - Targets:
+    - Torres - Sniper - 5F Hippie Home
+    - Gioia - Drowning - 2F Mansion
+    - Apuleio - Any - Mansion Lab
+    - Ilario - Explosive - Beach
+    - Stefano - Any - Church
+- Marrakesh
+  - Rule: Embassy and School are inaccessible without Access
+  - Theme: Shotgun (Themed)
+  - Targets:
+    - Sayid - Any - Prisoner in School
+    - Khaaliq - Any - School Upstairs
+    - Pamela - Any - Arches Before Consolate
+    - Orvar - Any - Consolate Walls Right
+    - Harry - Any - Consolate Upstairs Balcony
+  - Check 1st Marrakesh, might use instead
+- Bangkok
+  - Rule: Stay outside until Access
+  - Theme: Explosion (Themed)
+    - Dr. Jones - Explosion - Bar Out Front
+    - Sudarak - Explosion - Backyard Past Sleeper
+    - Alexander - Explosion - Right Side 3F
+    - Magnud - Explosion - Left Side 3F
+    - Douglas - Explosion - Left Side 4F
+- Colorado
+  - Rule: Stay outside (gates) until Access
+  - Theme: Sniper (Themed)
+    - Warren - Sniper - Outside Barns
+    - Tony - Sniper - Upstairs Main Barn
+    - Robert - Sniper - Chef Near Water Tower
+    - Ewan - Sniper - Main House Upstairs
+    - Reggie - Sniper - Main House Basement
+- Hokkaido
+  - Rule: Stay outside until Access
+  - Theme: Melee (Themed)
+    - Diane - Melee - Restaurant
+    - Sadato - Melee - Medical Observation Room
+    - Kazuyasu - Melee - Helicopter Bridge
+    - J. Brooke - Melee - Basement Delivery
+    - Morris - Melee - Spa
+- Hawke's Bay
+  - Rule: House inaccessible without Access
+  - Theme: Lethal (Themed)
+    - Kris - Lethal - Grave by Truck
+    - Pat - Lethal - House Overhang
+    - Alma - Lethal - House Entrance
+    - Gerard - Lethal - House Entrance
+    - Jarvis - Lethal - Back of House
+- Miami
+  - Rule: Kronstadt and Driver's Lounge inaccessible without Access
+  - Theme: Emetic (Themed)
+    - Alexander - Emetic - Parking Garage
+    - Brendon - Emetic - Krondstadt Drone Demo
+    - Dwain - Emetic - Krondstadt Overpass
+    - Linsdey - Emetic - Driver's Lounge Bathroom
+    - Michael - Emetic - Traffic Cones by Medic
+- Santa Fortuna
+  - Rule: Mansion and Coca Field are inaccessible without Access
+  - Theme: Open
+    - Eladia - Any - Town
+    - Hiram - Any - Mansion Back Bar
+    - Tom - Any - Mansion Underground
+    - Jorge - Any - Coca Field Crops
+    - Ibero - Any - Coca Field Helicopter
+- Mumbai
+  - Rule: Rangan Tower and Train Yard are inaccessible without Access
+  - Theme: Sniper (Themed)
+    - Harsh - Sniper - Rangan Tower 4F
+    - Mike - Sniper - Rangan Tower 6F
+    - Gilford - Sniper - Inner City
+    - Aditi - Sniper - Train Yard
+    - Aditya - Sniper - Train Yard Upstairs
+- Whittleton Creek
+  - Rule: No rule
+  - Theme: Shotgun (Themed)
+    - Susan - Shotgun - House Party
+    - Quinn - Shotgun - Janus Property
+    - Joseph - Shotgun - West Property
+    - Charles - Shotgun - Blake Stand
+    - Ann - Shotgun - Statue
+- Isle of Sgail
+  - Rule: Stay outside until Access
+  - Theme: Open
+    - Thaddeus - Any - Entrance Tour
+    - Declan - Any - VIP Stairs
+    - Woodrow - Any - Exhibit
+    - Muriel - Any - Morgue 3F
+    - Murray - Any - Stonehenge Steps
+- New York
+  - Rule: Level 3 and Basement are inaccessible without Access
+  - Theme: Explosion (Themed)
+    - Madelyn - Explosion - 1F Tellers
+    - Curt - Explosion - VIP Clients
+    - Nilsa - Explosion - 3F Conf Room
+    - Foster - Explosion - 3F Couch
+    - Aldo - Explosion - Basement Parking
+- Haven Island
+  - Rule: Compound is inaccessible without Access
+  - Theme: Melee (Themed)
+    - Captain - Melee - Upstairs Bar
+    - Dong - Melee - Spa
+    - Jakson - Melee - Gym
+    - Dr. Singh - Melee - Compound Bedroom
+    - Chris - Melee - Compound Underground
+- Dubai
+  - Rule: Penthouse is inaccessible without Access
+  - Theme: Varied
+  - Targets:
+    - Siddeeq - Any - 3F Reception
+    - Carl - Sniper - Penthouse
+    - Roberto - Any - Penthouse Kitchen
+    - Lucy - Drowning - Private Bar
+    - Omar - Explosion - 0F Stage
+- Dartmoor
+  - Rule: Stay outside until Access
+  - Theme: Varied
+  - Targets:
+    - Lawrence - Any - Mansion 1F
+    - Lucian - Sniper - Mansion Balcony
+    - Betsy - Explosion - Mansion 3F
+    - Robert - Drowning - Mansion Staff
+    - Leonard - Any - Cemetary
+- Berlin
+  - Rule: Stay outside until Access
+  - Theme: Sniper (Themed)
+  - Targets:
+    - Green - Sniper - Club Roof
+    - Gestur - Sniper - Club B1
+    - Andre - Sniper - Club B1
+    - Rolf - Sniper - Club B2
+    - Oswald - Sniper - Club ???
+- Chongqing (China)
+  - Rule: Underground is inaccessible without Access
+  - Theme: Emetic (Themed)
+  - Targets:
+    - Angus - Emetic - Restaurant
+    - Sister - Emetic - Hush 4F
+    - Aron - Emetic - Hush 2F
+    - Maia - Emetic - Underground B2
+    - Imogen - Emetic - Underground B3
+- Mendoza
+  - Rule: Villa and Grape Fields are inaccessible without Access
+  - Theme: Lethal (Themed)
+  - Targets:
+    - Geraldo - Lethal - Party 2F
+    - Jerrald - Lethal - Barrel Room
+    - Valentina - Lethal - Villa
+    - Montrel - Lethal - Villa Basement
+    - Faron - Lethal - Grape Fields
+- Ambrose Island
+  - Rule: Militia Cave is inaccessible without Access
+  - Theme: Open
+  - Targets:
+    - Farah - Any - Town
+    - Bhuvan - Any - Town
+    - Branden - Any - Militia Cave
+    - Laverne - Any - Militia Cave
+    - Nianzu - Any - Militia Cave
