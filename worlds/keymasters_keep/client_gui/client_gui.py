@@ -23,13 +23,16 @@ class KeymastersKeepManager(GameManager):
         container: Layout = super().build()
 
         self.keymasters_keep_tab_layout = KeymastersKeepTabLayout(self.ctx)
-        self.add_client_tab("Keymaster's Keep", self.keymasters_keep_tab_layout)
+        self.keymasters_keep_tab = self.add_client_tab("Keymaster's Keep", self.keymasters_keep_tab_layout)
+        self.keymasters_keep_tab.background_color = [232/255, 245/255, 54/255, 1]
 
         self.trials_tab_layout = TrialsTabLayout(self.ctx)
-        self.add_client_tab("Available Trials", self.trials_tab_layout)
+        self.available_trials_tab = self.add_client_tab("Available Trials", self.trials_tab_layout)
+        self.available_trials_tab.background_color = [79/255, 174/255, 247/255, 1]
 
         self.trials_completed_tab_layout = TrialsCompletedTabLayout(self.ctx)
-        self.add_client_tab("Completed Trials", self.trials_completed_tab_layout)
+        self.completed_trials_tab = self.add_client_tab("Completed Trials", self.trials_completed_tab_layout)
+        self.completed_trials_tab.background_color = [150/255, 150/255, 146/255, 1]
 
         return container
 
